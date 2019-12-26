@@ -31,11 +31,11 @@ struct ContentView: View {
                         
                         Text(!self.isOn ? mission.launchDateDisplay : "")
                         
-//                        Text(self.isOn ? mission.launchDateDisplay : mission.crew.compactMap { role in
-//                            return self.astronauts.first { (a: Astronaut) -> Bool in
-//                                a.id == role.name
-//                            }?.name
-//                        }.joined(separator: "\n"))
+                        Text(self.isOn ? mission.launchDateDisplay : mission.crew.compactMap { role in
+                            return self.astronauts.first { (a: Astronaut) -> Bool in
+                                a.id == role.name
+                            }?.name
+                        }.joined(separator: "\n"))
                     }
                 }
             }
