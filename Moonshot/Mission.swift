@@ -12,6 +12,10 @@ struct Mission: Identifiable, Codable {
     struct CrewRole: Codable {
         let name: String
         let role: String
+        
+        var crewNames: String {
+            "\(name)"
+        }
     }
     
     let id: Int
@@ -36,5 +40,7 @@ struct Mission: Identifiable, Codable {
             return "N/A"
         }
     }
+    
+
     
 }

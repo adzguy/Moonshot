@@ -20,4 +20,8 @@ struct Astronaut: Codable, Identifiable {
     var displayDescription: String {
         "\(description)"
     }
+    
+    var displayName: String {
+        "\(name)"
+    }
 }
